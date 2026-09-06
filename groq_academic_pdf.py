@@ -13,8 +13,8 @@ try:
 except Exception as e:
     print("Error initializing client. Please ensure your .env file contains a valid GROQ_API_KEY.")
     exit(1)
-
-def ask_groq_academic(prompt, model_name="llama-3.3-70b-versatile"):
+modelname = "qwen/qwen3.8-27b"
+def ask_groq_academic(prompt, model_name=modelname):
     system_persona = (
         "You are a distinguished academic expert and university professor. "
         "Your primary task is to provide answers that are highly rigorous, analytical, "

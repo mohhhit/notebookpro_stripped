@@ -12,7 +12,7 @@ except Exception as e:
     print("Error initializing client. Please ensure your .env file contains a valid GROQ_API_KEY.")
     exit(1)
 
-def ask_groq_academic(prompt, model_name="llama-3.3-70b-versatile"):
+def ask_groq_academic(prompt, model_name="openai/gpt-oss-120b"):
     """
     Sends a prompt to the Groq API using an MSc Academic Expert persona.
     """
